@@ -4,7 +4,7 @@ This is a REST api with one single GET endpoint which returns a paginated list o
 
 ### Functionality
 
-In order to test use the application, you must run `src/main/java/sebastien.cantin.musicAPI/MusicApiApplication` 
+In order to use the application, you must run `src/main/java/sebastien.cantin.musicAPI/MusicApiApplication` or the docker conatiner
 and use the url `http://localhost:8080/compatibleJukeboxes/{settingId}` that also supports the optional parameters `model`, `limit` and `offset`.
 
 `model` filters the results by the given model name
