@@ -1,5 +1,10 @@
 package sebastien.cantin.musicAPI.model;
 
+import com.fasterxml.jackson.databind.JsonNode;
+
+import java.awt.image.AreaAveragingScaleFilter;
+import java.util.ArrayList;
+
 public class Page {
 
     //------------------------
@@ -7,28 +12,35 @@ public class Page {
     //------------------------
 
     //Page Attributes
-    int pageNumber;
-    Jukebox[] jukeboxes;
+    int number;
+    Jukebox jukebox;
 
     //------------------------
     // CONSTRUCTOR
     //------------------------
 
-    public Page(int number, Jukebox[] jukeboxes){
-        this.pageNumber = number;
-        this.jukeboxes = jukeboxes;
+    public Page(int number, Jukebox jukebox){
+        this.number = number;
+        this.jukebox = jukebox;
     }
 
     //------------------------
     // INTERFACE
     //------------------------
 
-    public int getPageNumber() {
-        return pageNumber;
+    public int getNumber() {
+        return number;
     }
 
-    public Jukebox[] getJukeboxes() {
-        return jukeboxes;
+    public Jukebox getJukebox() {
+        return jukebox;
     }
 
+    @Override
+    public String toString() {
+        return "Page{" +
+                "number=" + number +
+                ", jukebox=" + jukebox +
+                "}";
+    }
 }

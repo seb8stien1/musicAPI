@@ -15,6 +15,7 @@ public class MusicApiApplication {
 
 	@RequestMapping(value=("/"))
 	public static String greeting(){
-		return "Hello World";
+		return "Welcome to my Backend Developer tech assignment!\n\n" +
+				"use the url /compatibleJukeboxes/{settingId} with the optional parameters model, limit and offset to receive a paginated list of jukeboxes that support a given setting id";
 	}
 }
