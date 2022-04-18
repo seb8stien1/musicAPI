@@ -14,7 +14,7 @@ and use the url `http://localhost:8080/compatibleJukeboxes/{settingId}` that als
 `offset` specifies the index that the list starts at, i.e. it skips that many jukeboxes at the beginning of the list
 
 ### Docker
-You can also clone the dockerized version of my program at `https://hub.docker.com/repository/docker/seb8stien/music-api` or pull it using the command: `docker pull seb8stien/music-api:1.0.0` or run it immediately using the command `docker run -d -p local_port:8080 seb8stien/music-api:1.0.0` where `local_port` can be any port you wish to use, with 8080 usually being free.
+You can also clone the dockerized version of my program at `https://hub.docker.com/repository/docker/seb8stien/music-api` or pull it using the command: `docker pull seb8stien/music-api:1.0.1` or run it immediately using the command `docker run -d -p local_port:8080 seb8stien/music-api:1.0.1` where `local_port` can be any port you wish to use, with 8080 usually being free.
 
 If you did pull it first, in order to create a local container, you must first find the id of the image using the command `docker images` and finding the image id that corresponds to `seb8stien/music-api`
 
